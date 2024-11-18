@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory Development Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()" class="theme-btn" aria-label="Toggle theme">🌙</button>
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header animate__animated animate__fadeIn">
+            <h1>Business Directory Development Timeline</h1>
+            <p class="subtitle">Estimated Duration: 8 Months (33 weeks)</p>
+            <div class="controls">
+                <button class="control-btn" onclick="expandAllPhases()">Expand All</button>
+                <button class="control-btn" onclick="collapseAllPhases()">Collapse All</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+                <span class="progress-text">0% Complete</span>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+            <!-- Phase 1: Core Technical Foundation -->
+            <div class="phase animate__animated" data-phase="1">
+                <div class="phase-number phase-1">1</div>
+                <div class="phase-content">
+                    <div class="phase-header">
+                        <div class="phase-title">
+                            <h2>Core Technical Foundation</h2>
+                            <span class="duration">4 weeks</span>
+                        </div>
+                        <div class="phase-controls">
+                            <button class="status-btn" onclick="toggleStatus(event, this)">Not Started</button>
+                            <button class="expand-btn" onclick="togglePhaseDetails(event, this)" aria-label="Expand phase">
+                                <span class="expand-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="phase-details">
+                        <div class="component-breakdown">
+                            <!-- Authentication & User System -->
+                            <div class="component">
+                                <h4>1. Authentication & User System (1 week)</h4>
+                                <ul class="tasks">
+                                    <li>
+                                        <input type="checkbox" id="task1-1" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-1" class="task-name">User registration/login system</label>
+                                            <span class="task-duration">2 days</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="task1-2" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-2" class="task-name">Role management implementation</label>
+                                            <span class="task-duration">1 day</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="task1-3" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-3" class="task-name">Session handling</label>
+                                            <span class="task-duration">1 day</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="task1-4" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-4" class="task-name">Security measures & testing</label>
+                                            <span class="task-duration">1 day</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- User Profile System -->
+                            <div class="component">
+                                <h4>2. User Profile System (1 week)</h4>
+                                <ul class="tasks">
+                                    <li>
+                                        <input type="checkbox" id="task1-5" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-5" class="task-name">Profile data structure</label>
+                                            <span class="task-duration">2 days</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="task1-6" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-6" class="task-name">Profile management</label>
+                                            <span class="task-duration">2 days</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="task1-7" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-7" class="task-name">Profile settings & preferences</label>
+                                            <span class="task-duration">1 day</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Mobile Framework & SEO -->
+                            <div class="component">
+                                <h4>3. Mobile Framework & SEO (1 week)</h4>
+                                <ul class="tasks">
+                                    <li>
+                                        <input type="checkbox" id="task1-8" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-8" class="task-name">Responsive framework setup</label>
+                                            <span class="task-duration">3 days</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="task1-9" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-9" class="task-name">SEO foundation implementation</label>
+                                            <span class="task-duration">2 days</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Points System -->
+                            <div class="component">
+                                <h4>4. Points System (1 week)</h4>
+                                <ul class="tasks">
+                                    <li>
+                                        <input type="checkbox" id="task1-10" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-10" class="task-name">Points logic implementation</label>
+                                            <span class="task-duration">3 days</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="task1-11" onchange="updateProgress()">
+                                        <div class="task-details">
+                                            <label for="task1-11" class="task-name">Integration & testing</label>
+                                            <span class="task-duration">2 days</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="phase-summary">
+                            <div class="summary-header">Phase Summary</div>
+                            <div class="summary-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Progress:</span>
+                                    <span class="stat-value completed-tasks">0/11</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Time Remaining:</span>
+                                    <span class="stat-value time-remaining" data-total-weeks="4">4 weeks</span>
+                                </div>
+                            </div>
+                            <div class="dependencies">
+                                <span class="dependency-label">Dependencies:</span>
+                                <span class="dependency-value">None - Initial Phase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Phase 2: Business Core -->
+<div class="phase animate__animated" data-phase="2">
+    <div class="phase-number phase-2">2</div>
+    <div class="phase-content">
+        <div class="phase-header">
+            <div class="phase-title">
+                <h2>Business Core</h2>
+                <span class="duration">4 weeks</span>
+            </div>
+            <div class="phase-controls">
+                <button class="status-btn" onclick="toggleStatus(event, this)">Not Started</button>
+                <button class="expand-btn" onclick="togglePhaseDetails(event, this)" aria-label="Expand phase">
+                    <span class="expand-icon">+</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="phase-details">
+            <div class="component-breakdown">
+                <!-- Business Profile Structure -->
+                <div class="component">
+                    <h4>1. Business Profile Structure (1.5 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task2-1" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task2-1" class="task-name">Data model design</label>
+                                <span class="task-duration">2 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task2-2" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task2-2" class="task-name">Basic profile creation</label>
+                                <span class="task-duration">3 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task2-3" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task2-3" class="task-name">Profile validation</label>
+                                <span class="task-duration">2.5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Categories & Location -->
+                <div class="component">
+                    <h4>2. Categories & Location System (1 week)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task2-4" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task2-4" class="task-name">Category system implementation</label>
+                                <span class="task-duration">3 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task2-5" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task2-5" class="task-name">Location integration</label>
+                                <span class="task-duration">2 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hours & Contact -->
+                <div class="component">
+                    <h4>3. Business Hours & Contact System (1 week)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task2-6" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task2-6" class="task-name">Business hours system</label>
+                                <span class="task-duration">3 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task2-7" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task2-7" class="task-name">Contact management system</label>
+                                <span class="task-duration">2 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Verification System -->
+                <div class="component">
+                    <h4>4. Verification System (0.5 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task2-8" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task2-8" class="task-name">Business verification process</label>
+                                <span class="task-duration">2 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task2-9" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task2-9" class="task-name">Testing & refinement</label>
+                                <span class="task-duration">0.5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phase-summary">
+                <div class="summary-header">Phase Summary</div>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <span class="stat-label">Progress:</span>
+                        <span class="stat-value completed-tasks">0/9</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Time Remaining:</span>
+                        <span class="stat-value time-remaining" data-total-weeks="4">4 weeks</span>
+                    </div>
+                </div>
+                <div class="dependencies">
+                    <span class="dependency-label">Dependencies:</span>
+                    <span class="dependency-value">Phase 1 - Core Technical Foundation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Phase 3: Business Management -->
+<div class="phase animate__animated" data-phase="3">
+    <div class="phase-number phase-3">3</div>
+    <div class="phase-content">
+        <div class="phase-header">
+            <div class="phase-title">
+                <h2>Business Management</h2>
+                <span class="duration">5 weeks</span>
+            </div>
+            <div class="phase-controls">
+                <button class="status-btn" onclick="toggleStatus(event, this)">Not Started</button>
+                <button class="expand-btn" onclick="togglePhaseDetails(event, this)" aria-label="Expand phase">
+                    <span class="expand-icon">+</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="phase-details">
+            <div class="component-breakdown">
+                <!-- Registration Flow -->
+                <div class="component">
+                    <h4>1. Registration Flow (1.5 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task3-1" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task3-1" class="task-name">Business registration system</label>
+                                <span class="task-duration">4 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task3-2" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task3-2" class="task-name">Business claim system</label>
+                                <span class="task-duration">3.5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dashboard Development -->
+                <div class="component">
+                    <h4>2. Dashboard Development (2 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task3-3" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task3-3" class="task-name">Main dashboard UI</label>
+                                <span class="task-duration">5 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task3-4" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task3-4" class="task-name">Dashboard functionality</label>
+                                <span class="task-duration">5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Content Management -->
+                <div class="component">
+                    <h4>3. Content Management (1.5 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task3-5" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task3-5" class="task-name">Posts system</label>
+                                <span class="task-duration">4 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task3-6" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task3-6" class="task-name">Offers management</label>
+                                <span class="task-duration">3.5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phase-summary">
+                <div class="summary-header">Phase Summary</div>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <span class="stat-label">Progress:</span>
+                        <span class="stat-value completed-tasks">0/6</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Time Remaining:</span>
+                        <span class="stat-value time-remaining" data-total-weeks="5">5 weeks</span>
+                    </div>
+                </div>
+                <div class="dependencies">
+                    <span class="dependency-label">Dependencies:</span>
+                    <span class="dependency-value">Phase 2 - Business Core</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Phase 4: E-commerce & Payments -->
+<div class="phase animate__animated" data-phase="4">
+    <div class="phase-number phase-4">4</div>
+    <div class="phase-content">
+        <div class="phase-header">
+            <div class="phase-title">
+                <h2>E-commerce & Payments</h2>
+                <span class="duration">5 weeks</span>
+            </div>
+            <div class="phase-controls">
+                <button class="status-btn" onclick="toggleStatus(event, this)">Not Started</button>
+                <button class="expand-btn" onclick="togglePhaseDetails(event, this)" aria-label="Expand phase">
+                    <span class="expand-icon">+</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="phase-details">
+            <div class="component-breakdown">
+                <!-- Store Setup -->
+                <div class="component">
+                    <h4>1. Store Setup (2 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task4-1" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task4-1" class="task-name">Multi-vendor structure</label>
+                                <span class="task-duration">5 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task4-2" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task4-2" class="task-name">Product management</label>
+                                <span class="task-duration">5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Payment Systems -->
+                <div class="component">
+                    <h4>2. Payment Systems (2 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task4-3" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task4-3" class="task-name">Payment integration</label>
+                                <span class="task-duration">5 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task4-4" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task4-4" class="task-name">Commission system</label>
+                                <span class="task-duration">5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Invoice System -->
+                <div class="component">
+                    <h4>3. Invoice System (1 week)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task4-5" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task4-5" class="task-name">Invoice generation</label>
+                                <span class="task-duration">3 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task4-6" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task4-6" class="task-name">Testing & optimization</label>
+                                <span class="task-duration">2 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phase-summary">
+                <div class="summary-header">Phase Summary</div>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <span class="stat-label">Progress:</span>
+                        <span class="stat-value completed-tasks">0/6</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Time Remaining:</span>
+                        <span class="stat-value time-remaining" data-total-weeks="5">5 weeks</span>
+                    </div>
+                </div>
+                <div class="dependencies">
+                    <span class="dependency-label">Dependencies:</span>
+                    <span class="dependency-value">Phase 3 - Business Management</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Phase 5: Search & Discovery -->
+<div class="phase animate__animated" data-phase="5">
+    <div class="phase-number phase-5">5</div>
+    <div class="phase-content">
+        <div class="phase-header">
+            <div class="phase-title">
+                <h2>Search & Discovery</h2>
+                <span class="duration">4 weeks</span>
+            </div>
+            <div class="phase-controls">
+                <button class="status-btn" onclick="toggleStatus(event, this)">Not Started</button>
+                <button class="expand-btn" onclick="togglePhaseDetails(event, this)" aria-label="Expand phase">
+                    <span class="expand-icon">+</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="phase-details">
+            <div class="component-breakdown">
+                <!-- Search Implementation -->
+                <div class="component">
+                    <h4>1. Search Implementation (2 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task5-1" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task5-1" class="task-name">Search engine development</label>
+                                <span class="task-duration">7 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task5-2" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task5-2" class="task-name">Filter system implementation</label>
+                                <span class="task-duration">3 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Location Features -->
+                <div class="component">
+                    <h4>2. Location Features (2 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task5-3" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task5-3" class="task-name">Map integration</label>
+                                <span class="task-duration">5 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task5-4" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task5-4" class="task-name">Location-based search</label>
+                                <span class="task-duration">5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Search Optimization -->
+                <div class="component">
+                    <h4>3. Search Enhancement & Testing</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task5-5" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task5-5" class="task-name">Search optimization</label>
+                                <span class="task-duration">3 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task5-6" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task5-6" class="task-name">Performance testing</label>
+                                <span class="task-duration">2 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phase-summary">
+                <div class="summary-header">Phase Summary</div>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <span class="stat-label">Progress:</span>
+                        <span class="stat-value completed-tasks">0/6</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Time Remaining:</span>
+                        <span class="stat-value time-remaining" data-total-weeks="4">4 weeks</span>
+                    </div>
+                </div>
+                <div class="dependencies">
+                    <span class="dependency-label">Dependencies:</span>
+                    <span class="dependency-value">Phase 2 - Business Core, Phase 4 - E-commerce</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Phase 6: Interaction Features -->
+<div class="phase animate__animated" data-phase="6">
+    <div class="phase-number phase-6">6</div>
+    <div class="phase-content">
+        <div class="phase-header">
+            <div class="phase-title">
+                <h2>Interaction Features</h2>
+                <span class="duration">4 weeks</span>
+            </div>
+            <div class="phase-controls">
+                <button class="status-btn" onclick="toggleStatus(event, this)">Not Started</button>
+                <button class="expand-btn" onclick="togglePhaseDetails(event, this)" aria-label="Expand phase">
+                    <span class="expand-icon">+</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="phase-details">
+            <div class="component-breakdown">
+                <!-- Review System -->
+                <div class="component">
+                    <h4>1. Review System (1.5 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task6-1" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task6-1" class="task-name">Review functionality</label>
+                                <span class="task-duration">4 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task6-2" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task6-2" class="task-name">Rating system</label>
+                                <span class="task-duration">3.5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Booking System -->
+                <div class="component">
+                    <h4>2. Booking System (1.5 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task6-3" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task6-3" class="task-name">Appointment scheduling</label>
+                                <span class="task-duration">4 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task6-4" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task6-4" class="task-name">Calendar integration</label>
+                                <span class="task-duration">3.5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Communication -->
+                <div class="component">
+                    <h4>3. Communication System (1 week)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task6-5" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task6-5" class="task-name">Messaging system</label>
+                                <span class="task-duration">3 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task6-6" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task6-6" class="task-name">Notification system</label>
+                                <span class="task-duration">2 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phase-summary">
+                <div class="summary-header">Phase Summary</div>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <span class="stat-label">Progress:</span>
+                        <span class="stat-value completed-tasks">0/6</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Time Remaining:</span>
+                        <span class="stat-value time-remaining" data-total-weeks="4">4 weeks</span>
+                    </div>
+                </div>
+                <div class="dependencies">
+                    <span class="dependency-label">Dependencies:</span>
+                    <span class="dependency-value">Phase 3 - Business Management, Phase 5 - Search & Discovery</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Phase 7: Monetization & Premium -->
+<div class="phase animate__animated" data-phase="7">
+    <div class="phase-number phase-7">7</div>
+    <div class="phase-content">
+        <div class="phase-header">
+            <div class="phase-title">
+                <h2>Monetization & Premium</h2>
+                <span class="duration">4 weeks</span>
+            </div>
+            <div class="phase-controls">
+                <button class="status-btn" onclick="toggleStatus(event, this)">Not Started</button>
+                <button class="expand-btn" onclick="togglePhaseDetails(event, this)" aria-label="Expand phase">
+                    <span class="expand-icon">+</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="phase-details">
+            <div class="component-breakdown">
+                <!-- Subscription System -->
+                <div class="component">
+                    <h4>1. Subscription System (2 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task7-1" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task7-1" class="task-name">Subscription logic</label>
+                                <span class="task-duration">5 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task7-2" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task7-2" class="task-name">Payment integration</label>
+                                <span class="task-duration">5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Premium Features -->
+                <div class="component">
+                    <h4>2. Premium Features (2 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task7-3" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task7-3" class="task-name">Feature implementation</label>
+                                <span class="task-duration">7 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task7-4" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task7-4" class="task-name">Testing & optimization</label>
+                                <span class="task-duration">3 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Affiliate System -->
+                <div class="component">
+                    <h4>3. Affiliate Program</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task7-5" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task7-5" class="task-name">Affiliate system setup</label>
+                                <span class="task-duration">4 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task7-6" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task7-6" class="task-name">Commission tracking</label>
+                                <span class="task-duration">3 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phase-summary">
+                <div class="summary-header">Phase Summary</div>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <span class="stat-label">Progress:</span>
+                        <span class="stat-value completed-tasks">0/6</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Time Remaining:</span>
+                        <span class="stat-value time-remaining" data-total-weeks="4">4 weeks</span>
+                    </div>
+                </div>
+                <div class="dependencies">
+                    <span class="dependency-label">Dependencies:</span>
+                    <span class="dependency-value">Phase 4 - E-commerce & Payments</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Phase 8: Analytics & Marketing -->
+<div class="phase animate__animated" data-phase="8">
+    <div class="phase-number phase-8">8</div>
+    <div class="phase-content">
+        <div class="phase-header">
+            <div class="phase-title">
+                <h2>Analytics & Marketing</h2>
+                <span class="duration">3 weeks</span>
+            </div>
+            <div class="phase-controls">
+                <button class="status-btn" onclick="toggleStatus(event, this)">Not Started</button>
+                <button class="expand-btn" onclick="togglePhaseDetails(event, this)" aria-label="Expand phase">
+                    <span class="expand-icon">+</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="phase-details">
+            <div class="component-breakdown">
+                <!-- Analytics Dashboard -->
+                <div class="component">
+                    <h4>1. Analytics Dashboard (1.5 weeks)</h4>
+                    <ul class="tasks">
+                        <li>
+                            <input type="checkbox" id="task8-1" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task8-1" class="task-name">Data collection system</label>
+                                <span class="task-duration">4 days</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task8-2" onchange="updateProgress()">
+                            <div class="task-details">
+                                <label for="task8-2" class="task-name">Dashboard creation</label>
+                                <span class="task-duration">3.5 days</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+        </div>
+
+        <!-- Key Considerations -->
+        <div class="considerations animate__animated animate__fadeIn">
+            <h3>Key Considerations</h3>
+            <ul>
+                <li>Each phase includes testing and client feedback cycles</li>
+                <li>Additional time may be needed for revisions and optimizations</li>
+                <li>Phases can be adjusted based on priority changes</li>
+                <li>Regular progress reviews and updates included</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
